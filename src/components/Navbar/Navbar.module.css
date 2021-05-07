@@ -1,0 +1,32 @@
+.navigation {
+  grid-area: nav;
+  background-color: #f2f2f2;
+}
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.navigation a:hover{
+  text-decoration: none;
+}
+.navigation li {
+  list-style: none;
+  display: flex;
+  height: 51px;
+  margin: 2px 0;
+  align-items: center;
+  background-color: #ffffff;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  
+}
+
+.navigation li:hover{
+  background-color: #e44e3ab0;
+  color: #ffffff;
+}
+.navigation ul {
+  padding: 0;
+}
