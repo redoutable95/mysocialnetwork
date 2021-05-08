@@ -1,25 +1,72 @@
-.info {
-  grid-area: content;
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-.cover img{
-  min-width: 100%;
-  max-height: 330px;
-  padding-bottom: 20px;
-}
-.avatar {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
+.MyPosts {
+  background-color: #fff;
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-  border: 5px solid #e44d3a
-}
-.avatar img{
- 
+  min-height: 200px;
+  max-height: none;
   
+
+}
+.NewPost{
+display: flex;
+width: 100%;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+gap: 15px;
+padding: 15px 0;
+}
+.NewPost textarea{
+width: 80%;
+min-height: 60%;
+resize: none;
+max-height: none;
+
+border-left:none;
+border-right: none;
+border-top:none;
+border-bottom: 1px solid #f26b2d;
+background-color: #f2f2f2;
+border-radius: 4px;
+padding: 5px;
+transition: border 0.2s linear;
+}
+.NewPost textarea:focus{
+  border: 1px solid #f26b2d;
+  outline: none;
+  
+}
+:focus::-webkit-input-placeholder {
+  color: transparent
+  
+}
+
+:focus::-moz-placeholder {
+  color: transparent
+}
+
+:focus:-moz-placeholder {
+  color: transparent
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent
+}
+
+.NewPost button{
+  width: 115px;
+  height: 30px;
+  background-color: #f26b2d;
+  border: none;
+  padding: 7px 16px 8px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12.5px;
+  align-self: flex-end;
+  margin-right: 10%;
+  transition: all 0.1s linear;
+}
+.NewPost button:focus{
+  outline: none;
+  box-shadow:5px 5px 5px -1px rgba(228, 78, 58, 0.6);
 }
