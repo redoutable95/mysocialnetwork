@@ -1,9 +1,4 @@
-.info {
-  grid-area: content;
-  background-color: #f2f2f2;
-  min-height: 100vh;
-  
-}
+
 .cover img{
   min-width: 100%;
   max-height: 330px;
