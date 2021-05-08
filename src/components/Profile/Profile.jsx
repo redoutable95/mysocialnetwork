@@ -14,9 +14,7 @@ const Profile = () => {
       </div>
       <ProfileInfo />
       <MyPosts />
-      <Post />
-      <Post />
-      <Post />
+     
     </main>
   );
 };
