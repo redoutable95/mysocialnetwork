@@ -14,19 +14,28 @@ const Message = (props) => {
   return <div className={style.message}>{props.message}</div>;
 };
 const Dialogs = (props) => {
+  let dialogsData = [
+    { id: 1, userName: "Aslambek" },
+    { id: 2, userName: "Mars" },
+    { id: 3, userName: "Cactus" },
+  ];
+
+  let messagesData = [
+    { id: 1, message: "Hello" },
+    { id: 1, message: "Hi" },
+    { id: 1, message: "How r u?" },
+  ];
+
+  let dialogElements = dialogsData.map((users) => (
+    <DialogItem userName={users.userName} id={users.id} />
+  ));
+  let messageElements = messagesData.map((message) => (
+    <Message message={message.message} />
+  ));
   return (
     <div className={style.dialogs}>
-      <div className={style.dialogItems}>
-        <DialogItem userName="Hanna" id="1" />
-        <DialogItem userName="Ann" id="2" />
-        <DialogItem userName="Harry" id="3" />
-      </div>
-
-      <div className={style.messages}>
-        <Message message="Hello" />
-        <Message message="Yo" />
-        <Message message="No" />
-      </div>
+      <div className={style.dialogItems}> {dialogElements} </div>
+      <div className={style.messages}> {messageElements} </div>
     </div>
   );
 };

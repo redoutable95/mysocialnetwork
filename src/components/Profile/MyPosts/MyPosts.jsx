@@ -2,6 +2,11 @@ import React from "react";
 import style from "./MyPosts.module.css";
 import Post from "./Post/Post";
 const MyPosts = () => {
+  let textData = [
+    { id: 1, text: "Faaaasdfw" },
+    { id: 1, text: "Hi" },
+    { id: 1, text: "How r u?" },
+  ];
   return (
     <div>
       <div className={style.MyPosts}>
@@ -11,10 +16,10 @@ const MyPosts = () => {
         </div>
       </div>
 
-      <Post text="lLorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit deserunt a optio saepe voluptates dolores aut perspiciatis voluptatum eos eaque quos sequi, quidem, sapiente modi excepturi, veritatis enim omnis praesentium?" />
-      <Post text="sit amet consectetur adipisicing elit. Reprehenderit deserunt a optio saepe voluptates dolores aut perspiciatis voluptatum eos eaque quos sequi, quidem," />
-
-      <Post text="Reprehenderit deserunt a optio saepe voluptates dolores aut perspiciatis voluptatum eos eaque quos sequi, quidem, sapiente modi excepturi, veritatis enim omnis praesentium?" />
+      <Post text={textData[0].text} />
+      <Post text={textData[1].text} />
+      <Post text={textData[2].text} />
+      
     </div>
   );
 };
