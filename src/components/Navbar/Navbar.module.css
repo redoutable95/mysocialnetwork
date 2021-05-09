@@ -2,7 +2,7 @@
   grid-area: nav;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  position: sticky;
+
 }
 .navigation a {
   text-decoration: none;

@@ -12,6 +12,7 @@ const App = () => {
         <Header />
         <div className="container">
           <Navbar />
+          
           <div className="app-content">
             <Route path="/profile" component={Profile} />
             <Route path="/messages" component={Dialogs} />
