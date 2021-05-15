@@ -7,6 +7,7 @@ const MyPosts = () => {
     { id: 1, text: "Hi" },
     { id: 1, text: "How r u?" },
   ];
+  let postText = textData.map((text) => <Post text={text.text} id={text.id} />);
   return (
     <div>
       <div className={style.MyPosts}>
@@ -16,10 +17,7 @@ const MyPosts = () => {
         </div>
       </div>
 
-      <Post text={textData[0].text} />
-      <Post text={textData[1].text} />
-      <Post text={textData[2].text} />
-      
+      {postText}
     </div>
   );
 };
